@@ -1,18 +1,18 @@
-import apple from "../assets/logos/logoI.jpg";
-import samsung from "../assets/logos/logoSAM.jpg";
-import xiaomi from "../assets/logos/logoX.jpg";
-import oppo from "../assets/logos/logoO.png";
-import vivo from "../assets/logos/logoV.jpg";
-import realme from "../assets/logos/logoR.jpg";
-import oneplus from "../assets/logos/logoO.jpg";
-import pixel from "../assets/logos/logoG.jpg";
-import motorola from "../assets/logos/logoM.jpg";
-import nokia from "../assets/logos/logoN.png";
-import sony from "../assets/logos/logoS.jpg";
-import asus from "../assets/logos/logoA.jpg";
-import huawei from "../assets/logos/logoH.png";
+import apple from "../assets/Logos/logoP.jpg";
+import samsung from "../assets/Logos/logoSAM.jpg";
+import xiaomi from "../assets/Logos/logoX.jpg";
+import oppo from "../assets/Logos/logoO.png";
+import vivo from "../assets/Logos/logoV.jpg";
+import realme from "../assets/Logos/logoR.jpg";
+import oneplus from "../assets/Logos/logoO.jpg";
+import pixel from "../assets/Logos/logoG.jpg";
+import motorola from "../assets/Logos/logoM.jpg";
+import nokia from "../assets/Logos/logoN.png";
+import sony from "../assets/Logos/logoS.jpg";
+import asus from "../assets/Logos/logoA.jpg";
+import huawei from "../assets/Logos/logoH.png";
 
-const logos = [
+const Logos = [
   { src: apple, title: "Apple" },
   { src: samsung, title: "Samsung" },
   { src: xiaomi, title: "Xiaomi" },
@@ -29,7 +29,7 @@ const logos = [
 ];
 
 export default function ScrollingLogos() {
-  const allLogos = [...logos, ...logos]; // For infinite scroll
+  const allLogos = [...Logos, ...Logos]; // For infinite scroll
 
   return (
     <div className="w-full bg-white py-4">
