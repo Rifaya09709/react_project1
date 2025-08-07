@@ -1,12 +1,17 @@
 import { motion, AnimatePresence } from "framer-motion";
-import iphone from "../assets/phone19.jpg";
+import iphone from "../assets/phone.jpg";
 import samsung from "../assets/phone2.jpg";
-import pixel from "../assets/phone3.jpg";
-import oneplus from "../assets/phone4.jpg";
+import pixel from "../assets/pe.jpg";
+import oneplus from "../assets/plus.png";
 import oppo from "../assets/phone6.png";
 import infinix from "../assets/phone17.jpg";
 import honor from "../assets/phone11.jpg";
 import motorola from "../assets/phone12.jpg";
+import huawei from "../assets/ph.png";
+import asus from "../assets/phone14.jpg";
+import nokia from "../assets/phone15.png";
+import sony from "../assets/phone16.jpg";
+
 
 export default function Sales({ searchTerm, handleSearch, selectedPhones, handleAdd }) {
   const phones = [
@@ -18,7 +23,12 @@ export default function Sales({ searchTerm, handleSearch, selectedPhones, handle
     { id: 6, name: "Infinix Zero 30", price: "₹45,999", image: infinix },
     { id: 9, name: "Honor 90", price: "₹25,999", image: honor },
     { id: 10, name: "Motorola Edge 40", price: "₹45,999", image: motorola },
+     {id: 11, name: "Huawei P60 Pro", price: "₹55,999", image: huawei },
+    { id: 12, name: "Asus ROG Phone 7", price: "₹45,999", image: asus },
+    { id: 13, name: "Nokia X30", price: "₹65,999", image: nokia },
+    { id: 14, name: "Sony Xperia 1 V", price: "₹75,999", image: sony },
   ];
+  
 
   const filteredPhones = phones.filter((phone) =>
     phone.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -60,7 +70,7 @@ export default function Sales({ searchTerm, handleSearch, selectedPhones, handle
               <img
                 src={phone.image}
                 alt={phone.name}
-                className="w-full h-48 object-cover"
+                className="w-[300px] h-[250px] object-contain mx-auto"
               />
               <div className="p-4">
                 <h3 className="text-lg font-bold text-gray-800">{phone.name}</h3>
